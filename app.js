@@ -49,8 +49,11 @@ getStuff = async function(){
     console.log(await sql.getAllFromTable('groupinfo'));
 }
 
+
 getStuff();
 
 sql.getNumOfConsultants(1);
-sql.checkCapacity(1)
+sql.checkCapacity(1);
+sql.scheduleTable();
+
 module.exports = app;

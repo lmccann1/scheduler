@@ -6,20 +6,24 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
 
   <form action="/submit" method="POST">
+    <p>Select Group</p>
     <select name="group">
       <% groups.forEach( group => {%>
       <option value="<%= group.G_id %>"><%= group.Name %></option>
       <%})%>
     </select>
+    <p>Select Skill</p>
     <select name="skill">
       <% skills.forEach( skill => {%>
         <option value="<%= skill.S_id %>"><%= skill.Skills %></option>
       <%})%>
     </select>
+    <p>Choose Date</p>
     <input name="date" type="date">
+    <br>
+    <br>
     <input type="submit">
   </form>
 

@@ -9,10 +9,11 @@ router.get('/', async function(req, res, next) {
     let skills = await sqlcontroller.getAllFromTable('skills');
     console.log(groups);
     res.render('index', {
-        title: 'Express',
+        title: 'SCHEDULER',
         groups: groups,
         skills: skills
     });
 });
+
 
 module.exports = router;
